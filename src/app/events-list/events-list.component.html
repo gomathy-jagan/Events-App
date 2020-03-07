@@ -1,0 +1,15 @@
+<div>
+  <h1>Angular training events</h1>
+  <hr />
+  <div class="row">
+    {{ EVENTS }}
+    <app-event-thumbnail
+      *ngFor="let event of events"
+      #thumbnail
+      [event]="event"
+    >
+    </app-event-thumbnail>
+    <!-- <div *ngFor="let event of EVENTS" class="col-md-5">
+      <app-event-thumbnail #thumbnail [event]="event"> </app-event-thumbnail> -->
+  </div>
+</div>
